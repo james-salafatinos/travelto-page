@@ -52,7 +52,7 @@ router.post("/api", (req, res) => {
       res.status(500);
       res.send("Sorry that did not work...");
     } else {
-      res.send(result);
+      res.json(result);
     }
   });
 });
