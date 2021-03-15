@@ -32,9 +32,13 @@ async function saveToDatabase(datasetObject) {
 
   // console.log("Whats going over to mongo..", jsonModel);
   axios
-    .post(`${base_url}/add-record`, {
-      datasetObject: jsonModel,
-    })
+    .post(
+      `${base_url}/add-record`,
+      {
+        datasetObject: jsonModel,
+      },
+      { headers: { "Access-Control-Allow-Origin": "*" } }
+    )
     .then((result) => {
       console.log(`axios post: Add-Record Returned`);
       setRandomColor();
@@ -45,7 +49,6 @@ async function saveToDatabase(datasetObject) {
         "Upon call back from /add-record axios post to mongo",
         result
       );
-      res.send();
     });
 
   console.log("Weights sent to DB...");

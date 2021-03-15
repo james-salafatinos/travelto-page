@@ -22,10 +22,10 @@ router.get("/", function (req, res) {
 router.post("/add-record", (req, res) => {
   // DB API, takes a post JSON of the weights and saves it to database
   console.log(
-    "In proflies/add-record accepting post request... Passing to direct Mongoose DB call to create document"
+    "In /add-record accepting post request... Passing to direct Mongoose DB call to create document"
   );
   const user_weights = req.body;
-  console.log("THis is in post/ add-record on profiles.js", user_weights);
+  console.log("This is in post/ add-record on profiles.js", user_weights);
   DatasetObject.create(user_weights, function (err, result) {
     if (err) {
       console.log(err);
@@ -39,16 +39,18 @@ router.post("/add-record", (req, res) => {
   });
 });
 
-router.post("/api/add-record", (req, res) => {
+router.post("/api", (req, res) => {
   // DB API, takes a post JSON of the weights and saves it to database
   console.log(
-    "In proflies/add-record accepting post request... Passing to direct Mongoose DB call to create document"
+    "In /api accepting post request... Passing to direct Mongoose DB call to create document"
   );
   const user_weights = req.body;
-  console.log("THis is in post/ add-record on profiles.js", user_weights);
+  console.log("This is in post/ on api.js", user_weights);
   DatasetObject.create(user_weights, function (err, result) {
     if (err) {
       console.log(err);
+      res.status(500);
+      res.send("Sorry that did not work...");
     } else {
       res.send(result);
     }
