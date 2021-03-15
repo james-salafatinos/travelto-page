@@ -39,6 +39,22 @@ router.post("/add-record", (req, res) => {
   });
 });
 
+router.post("/api/add-record", (req, res) => {
+  // DB API, takes a post JSON of the weights and saves it to database
+  console.log(
+    "In proflies/add-record accepting post request... Passing to direct Mongoose DB call to create document"
+  );
+  const user_weights = req.body;
+  console.log("THis is in post/ add-record on profiles.js", user_weights);
+  DatasetObject.create(user_weights, function (err, result) {
+    if (err) {
+      console.log(err);
+    } else {
+      res.send(result);
+    }
+  });
+});
+
 router.get("/:uuid", (req, res) => {
   //600dd15c316b6008f4e31dbf
   console.log(req.params);
@@ -50,7 +66,7 @@ router.get("/:uuid", (req, res) => {
     .catch((err) => console.log(err));
 });
 
-router.get("/test-api/:uuid", (req, res) => {
+router.get("/api/:uuid", (req, res) => {
   //600dd15c316b6008f4e31dbf
   console.log(req.params);
   let uuid = req.params.uuid;
