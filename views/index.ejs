@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css" />
+    <meta http-equiv="content-language" content="en" />
+  </head>
+  <body>
+    <div class="text-center">
+      <div class="container">
+        <br>
+        <br>
+        <div style="display: inline-flex" class='property-card-wide'>
+          <form onsubmit="return false" id="class-label">
+            <label style="color: black; font-size: 28px;  text-shadow: 15px 8px 10px rgba(14, 14, 14, 0.2);" for="class-label">Push Text</label>
+            <br />
+            <input
+              id="input-label"
+              class="element-mini"
+              type="text"
+              name="class-label"
+              value=""
+            /><br />
+            <button class="btn btn-lg btn-default center-block" id="save_to_database_button">
+              Push
+            </button>
+            <br>
+            
+          </form>
+
+
+          <h1 style=" font-weight: bold;" id = 'inserted-db-id'></h1>
+
+
+          <label style="color: black; font-size: 28px; text-shadow: 15px 8px 10px rgba(14, 14, 14, 0.2);" for="class-label">Push File</label>
+          <input
+            value="Load Prior Knowledge"
+            class="btn btn-lg btn-default center-block"
+            id="load_button"
+            type="file"
+            accept=".json"
+          />
+
+        </div>
+
+        </div>
+
+        </div>
+
+      </div>
+
+        <br />
+        <br />
+        <br />
+
+
+        <script src="app.js"></script>
+ 
+    </div>
+  </body>
+</html>

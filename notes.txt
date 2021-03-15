@@ -1,0 +1,5 @@
+As a user, I want to, as quickly as possible, paste something in a text box, and get a shortened link back, no authentication
+As a user, I expect to access the site via mobile device, computer, or on a browser
+
+
+
