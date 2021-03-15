@@ -1,7 +1,7 @@
 //Express server management
 const express = require("express");
 const app = express();
-const port = 8070;
+const port = 8080;
 const bodyParser = require("body-parser");
 
 //Required for environment variables

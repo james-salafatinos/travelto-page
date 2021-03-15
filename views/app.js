@@ -4,7 +4,7 @@ if (window.location.origin == "https://webcam-ml-304019.uc.r.appspot.com") {
   var base_url = "https://webcam-ml-304019.uc.r.appspot.com";
   console.log(base_url);
 } else {
-  var base_url = "http://localhost:8070";
+  var base_url = "http://localhost:8080";
   console.log(base_url);
 }
 
@@ -45,6 +45,7 @@ async function saveToDatabase(datasetObject) {
         "Upon call back from /add-record axios post to mongo",
         result
       );
+      res.send();
     });
 
   console.log("Weights sent to DB...");
