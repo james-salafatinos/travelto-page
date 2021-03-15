@@ -33,7 +33,7 @@ async function saveToDatabase(datasetObject) {
   // console.log("Whats going over to mongo..", jsonModel);
   axios
     .post(
-      `${base_url}/add-record`,
+      `/add-record`,
       {
         datasetObject: jsonModel,
       },
