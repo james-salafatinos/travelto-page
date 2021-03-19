@@ -13,13 +13,15 @@ To create a page,
 
 
 Computers
-```import pandas as pd 
+```
+import pandas as pd 
 import requests
 import json
 
 r = requests.get('http://localhost:8080/60550510c6f4667c882b7c72')
 data = r.text
-db = json.loads(data)```
+db = json.loads(data)
+```
 
 ## Features
 
