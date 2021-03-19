@@ -1,6 +1,6 @@
 # Travelto.page
 
-### Simple textshare, free and easy. Share simple text between humans and between computers. Inclusive of computer humans.
+### Simple textshare, free and easy. Share raw text data between humans and between computers. Inclusive of computer humans.
 
 #### To find a page,
 
