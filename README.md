@@ -38,9 +38,8 @@ Requirements:
 3. Clone the repository into a NodeJS enabled environment
 4. Install the repository in preferred folder
 5. Create a file in the root directory called ```.env```
-6. Use the template below and paste the URI of the free MongoDB URI
+6. Use the template below and paste the URI of the free MongoDB URI into ```.env```
 ```
-#May look like: beachball@cluster0.dsdew.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 DB_URI=""
 ```
 8. Run server
