@@ -5,8 +5,8 @@ travelto.page
 SSL
 notes.txt
 
-.ipynb
-.py
+*.ipynb
+*.py
 
 accessor.js
 
