@@ -4,7 +4,7 @@
 
 
 ## Features
-- Access via browser or 
+- Access via browser or via HTTP 
 - Authentication-less model *save*! Who wants to create an account? Not me... just copy the UUID and save it somewhere!
 - Authentication-less model *load*! Send the UUID of your trained model to your friends and have them load it! Great for memes.
 
