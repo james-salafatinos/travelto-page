@@ -5,14 +5,8 @@ textshare, free and easy. Share text files (txt, csv, or json) between humans an
 To find a page,
 
 - go to: travelto.page/6054d9e0f05fd83ad8fe2afe
-
-To create a page,
-
-- go to: https://travelto.page/
-- or send a POST request to https://travel.to/api/
-
-
-Computers
+- Python
+Read into a python dictionary
 ```
 import pandas as pd 
 import requests
@@ -22,6 +16,14 @@ r = requests.get('http://travelto.page/60550510c6f4667c882b7c72')
 data = r.text
 db = json.loads(data)
 ```
+
+To create a page,
+
+- go to: https://travelto.page/
+- or send a POST request to https://travel.to/api/
+
+
+
 
 ## Features
 
