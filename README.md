@@ -4,9 +4,8 @@ textshare, free and easy. Share text files (txt, csv, or json) between humans an
 
 To find a page,
 
-- go to: travelto.page/6054d9e0f05fd83ad8fe2afe
-- Python
-Read into a python dictionary
+- On a browser, go to: travelto.page/6054d9e0f05fd83ad8fe2afe
+- Or in access via Python
 ```
 import pandas as pd 
 import requests
