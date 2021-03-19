@@ -21,6 +21,7 @@ app.use(bodyParser.urlencoded({ limit: "50mb", extended: true }));
 //@Route Home Page Route
 app.get("/", (req, res) => {
   console.log("User entry to site...");
+  res.status(200);
   res.render("index");
 });
 

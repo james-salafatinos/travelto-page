@@ -13,8 +13,6 @@ mongoose
   .then((result) => console.log("Connected to db"))
   .catch((err) => console.log("Error on connection with mongodb...", err));
 
-//##### /PROFILES #######
-
 router.get("/", function (req, res) {
   res.status(200).send("Youve reached the API");
 });
@@ -24,14 +22,14 @@ router.post("/add-record", (req, res) => {
   console.log(
     "In /add-record accepting post request... Passing to direct Mongoose DB call to create document"
   );
-  const user_weights = req.body;
-  console.log("This is in post/ add-record on profiles.js", user_weights);
-  DatasetObject.create(user_weights, function (err, result) {
+  const dataPayload = req.body;
+  console.log("This is in post/ add-record on profiles.js", dataPayload);
+  DatasetObject.create(dataPayload, function (err, result) {
     if (err) {
       console.log(err);
     } else {
       console.log(
-        `Saved weights to MongoDB with _id: ${JSON.stringify(result._id)}`
+        `Saved payload to MongoDB with _id: ${JSON.stringify(result._id)}`
       );
       //This sends a notification back to the CLIENT that the database load was successful!
       res.redirect(`/${result._id}`);
@@ -44,9 +42,9 @@ router.post("/api", (req, res) => {
   console.log(
     "In /api accepting post request... Passing to direct Mongoose DB call to create document"
   );
-  const user_weights = req.body;
-  console.log("This is in post/ on api.js", user_weights);
-  DatasetObject.create(user_weights, function (err, result) {
+  const dataPayload = req.body;
+  console.log("This is in post/ on api.js", dataPayload);
+  DatasetObject.create(dataPayload, function (err, result) {
     if (err) {
       console.log(err);
       res.status(500);

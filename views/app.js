@@ -1,12 +1,7 @@
 //@help
-//Checks the client side origin and sets the "Base URL" for axios API calls
-if (window.location.origin == "https://webcam-ml-304019.uc.r.appspot.com") {
-  var base_url = "https://webcam-ml-304019.uc.r.appspot.com";
-  console.log(base_url);
-} else {
-  var base_url = "http://localhost:8080";
-  console.log(base_url);
-}
+//sets the "Base URL" for axios API calls
+var base_url = "http://localhost:8080";
+
 
 //@help
 //Consolidates weights to JSON
@@ -51,7 +46,7 @@ async function saveToDatabase(datasetObject) {
       );
     });
 
-  console.log("Weights sent to DB...");
+  console.log("dataPayload sent to DB...");
 }
 
 async function loadFromDatabase(db_uuid, classifierModel) {
@@ -106,18 +101,7 @@ const start = async () => {
     saveModelToDatabase(dataTextObject);
   }
 
-  const initializeElements = () => {
-    async function getCodeNameAndTriggerDBRetrieve(classifierModel) {
-      //Get Code Name
-      let db_uuid = document.getElementById("uuid-for-db").value;
-      console.log("In getCodeNameandRetrieve... db_uuid: ", db_uuid);
 
-      //Trigger DB Call
-      loadFromDatabase(db_uuid, classifierModel);
-    }
-  };
-
-  await initializeElements();
 };
 window.onload = () => {
   start();
