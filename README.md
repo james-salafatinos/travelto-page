@@ -1,8 +1,8 @@
 # Travelto.page
 
-textshare, free and easy. Share text files (txt, csv, or json) between humans and between computers. Inclusive of computer humans.
+### Simple textshare, free and easy. Share simple text between humans and between computers. Inclusive of computer humans.
 
-To find a page,
+#### To find a page,
 
 - On a browser, go to: travelto.page/6054d9e0f05fd83ad8fe2afe
 - Or in access via Python
@@ -16,7 +16,7 @@ data = r.text
 db = json.loads(data)
 ```
 
-To create a page,
+#### To create a page,
 
 - go to: https://travelto.page/
 - or send a POST request to https://travel.to/api/
