@@ -1,4 +1,4 @@
-# travelto.page
+# Travelto.page
 
 textshare, free and easy. Share text files (txt, csv, or json) between humans and between computers. Inclusive of computer humans.
 
@@ -21,23 +21,27 @@ To create a page,
 - go to: https://travelto.page/
 - or send a POST request to https://travel.to/api/
 
-
-
-
-## Features
-
-## Demo
-
-## About
-
 ## Development
+Requirements:
+1. Register for a free MongoDB (https://www.mongodb.com/) account and get a connection URI.
 
-Installation for local development
-Run git clone https://github.com/james-salafatinos/webcam-ml.git in your desired directory
-Run npm install -i to install the dependencies
-Run npm start to initiate the server listening at http://localhost:8080/
+3. Clone the repository into a NodeJS enabled environment
+4. Install the repository in preferred folder
+5. Create a file in the root directory called ```.env```
+6. Use the template below and paste the URI of the free MongoDB URI
+```
+#May look like: beachball@cluster0.dsdew.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+DB_URI=""
+```
+8. Run server
+```
+git clone https://github.com/james-salafatinos/travelto-page.git in your desired directory
+npm install -i to install the dependencies
+npm start
+```
+This initiate the server listening at http://localhost:8080/.
+2. Create a file in th
 
-## Architecture
 
 ## Todo
 
