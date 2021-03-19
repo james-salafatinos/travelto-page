@@ -1,8 +1,16 @@
 # Travelto.page
 
-### Simple textshare, free and easy. Share raw text data between humans and between computers. Inclusive of computer humans.
+## Simple textshare, free and easy. Share raw text data between humans and between computers. Inclusive of computer humans.
 
-#### To find a page,
+
+## Features
+- Access via browser or 
+- Authentication-less model *save*! Who wants to create an account? Not me... just copy the UUID and save it somewhere!
+- Authentication-less model *load*! Send the UUID of your trained model to your friends and have them load it! Great for memes.
+
+## Usage
+
+### To find a page,
 
 - On a browser, go to: travelto.page/6054d9e0f05fd83ad8fe2afe
 - Or in access via Python
@@ -16,7 +24,7 @@ data = r.text
 db = json.loads(data)
 ```
 
-#### To create a page,
+### To create a page,
 
 - go to: https://travelto.page/
 - or send a POST request to https://travel.to/api/
