@@ -12,14 +12,14 @@
 
 ### To find a page,
 
-- On a browser, go to: travelto.page/6054d9e0f05fd83ad8fe2afe
+- On a browser, go to: http://travelto.page/605510527ab1e1001200aabb/
 - Or in access via Python
 ```
 import pandas as pd 
 import requests
 import json
 
-r = requests.get('http://travelto.page/60550510c6f4667c882b7c72')
+r = requests.get('http://travelto.page/605510527ab1e1001200aabb')
 data = r.text
 db = json.loads(data)
 ```
