@@ -21,6 +21,8 @@ To create a page,
 - go to: https://travelto.page/
 - or send a POST request to https://travel.to/api/
 
+
+
 ## Development
 Requirements:
 1. Register for a free MongoDB (https://www.mongodb.com/) account and get a connection URI.
@@ -39,10 +41,5 @@ git clone https://github.com/james-salafatinos/travelto-page.git in your desired
 npm install -i to install the dependencies
 npm start
 ```
-This initiate the server listening at http://localhost:8080/.
-2. Create a file in th
+This will initiate the server listening at http://localhost:8080/
 
-
-## Todo
-
--
